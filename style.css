@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+body {
+    background: url("img/background.png");
+}
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.container {
+    background-color: #d1d1d1;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px auto 0 auto;
+    width: 500px;
+}
+.input-task{
+    border: none;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.button-add-task{
+    border: none;
+    color: #ffff;
+    font-size: 17px;
+    padding: 0 15px;
+    height: 40px;
+    background: #003329;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+}
+.button-add-task:hover{
+    opacity: 0.8;
+}
+.button-add-task:active{
+    opacity: 0.6;
+}
+.list-task{
+    width: 100%;
+    list-style: none;
+}
+.task{
+    background: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    cursor: pointer;
+    align-items: center;
+}
+.task:hover img{
+    opacity: 1;
+}
+.done {
+    background: #8fac55;
+    text-decoration: line-through;
+}
